@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map API</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="map2">
+      <b>Start: </b>
+      <select id="BatDau">
+        <option value="150 Man Thien" id="nhaPhuc">Nha Phuc</option>
+        <option value="PHÂN HIỆU TRƯỜNG ĐH GTVT TẠI TP. HỒ CHÍ MINH" id="UTC2">DHGTVT</option>
+      </select>
+      <b>End: </b>
+      <select id="KetThuc">
+        <option value="150 Man Thien" id="nhaPhuc">Nha Phuc</option>
+        <option value="PHÂN HIỆU TRƯỜNG ĐH GTVT TẠI TP. HỒ CHÍ MINH" id="UTC2">DHGTVT</option>
+      </select>
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNI_ZWPqvdS6r6gPVO50I4TlYkfkZdXh8&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
